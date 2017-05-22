@@ -14902,10 +14902,10 @@ part number 2062-2P from STA</description>
 <instance part="R2" gate="G$1" x="73.66" y="50.8" rot="MR90"/>
 <instance part="C17" gate="G$1" x="73.66" y="43.18" rot="MR0"/>
 <instance part="SUPPLY10" gate="GND" x="78.74" y="55.88"/>
-<instance part="J4" gate="G$1" x="38.1" y="30.48" rot="R90"/>
+<instance part="J4" gate="G$1" x="35.56" y="30.48" rot="MR90"/>
 <instance part="J5" gate="G$1" x="50.8" y="30.48" rot="R90"/>
 <instance part="J6" gate="G$1" x="60.96" y="30.48" rot="R90"/>
-<instance part="J7" gate="G$1" x="78.74" y="30.48" rot="R90"/>
+<instance part="J7" gate="G$1" x="76.2" y="30.48" rot="MR90"/>
 <instance part="J8" gate="G$1" x="-33.02" y="83.82"/>
 <instance part="SUPPLY11" gate="GND" x="78.74" y="40.64" rot="R180"/>
 <instance part="SUPPLY12" gate="GND" x="58.42" y="40.64" rot="R180"/>
@@ -14999,13 +14999,13 @@ part number 2062-2P from STA</description>
 <segment>
 <pinref part="SUPPLY4" gate="GND" pin="GND"/>
 <wire x1="43.18" y1="43.18" x2="43.18" y2="40.64" width="0.1524" layer="91"/>
-<pinref part="J4" gate="G$1" pin="1"/>
 <wire x1="43.18" y1="40.64" x2="38.1" y2="40.64" width="0.1524" layer="91"/>
-<wire x1="38.1" y1="40.64" x2="38.1" y2="38.1" width="0.1524" layer="91"/>
 <pinref part="J5" gate="G$1" pin="2"/>
 <wire x1="43.18" y1="40.64" x2="48.26" y2="40.64" width="0.1524" layer="91"/>
 <wire x1="48.26" y1="40.64" x2="48.26" y2="38.1" width="0.1524" layer="91"/>
 <junction x="43.18" y="40.64"/>
+<pinref part="J4" gate="G$1" pin="2"/>
+<wire x1="38.1" y1="40.64" x2="38.1" y2="38.1" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C11" gate="G$1" pin="-"/>
@@ -15025,12 +15025,12 @@ part number 2062-2P from STA</description>
 <wire x1="78.74" y1="71.12" x2="78.74" y2="58.42" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="J7" gate="G$1" pin="1"/>
-<pinref part="SUPPLY11" gate="GND" pin="GND"/>
-</segment>
-<segment>
 <pinref part="J6" gate="G$1" pin="2"/>
 <pinref part="SUPPLY12" gate="GND" pin="GND"/>
+</segment>
+<segment>
+<pinref part="J7" gate="G$1" pin="2"/>
+<pinref part="SUPPLY11" gate="GND" pin="GND"/>
 </segment>
 </net>
 <net name="N$4" class="0">
@@ -15077,13 +15077,6 @@ part number 2062-2P from STA</description>
 <pinref part="J1" gate="G$1" pin="5"/>
 <wire x1="45.72" y1="68.58" x2="48.26" y2="71.12" width="0.1524" layer="91"/>
 <wire x1="48.26" y1="71.12" x2="48.26" y2="73.66" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$7" class="0">
-<segment>
-<pinref part="C8" gate="G$1" pin="1"/>
-<wire x1="35.56" y1="60.96" x2="35.56" y2="38.1" width="0.1524" layer="91"/>
-<pinref part="J4" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$8" class="0">
@@ -15144,19 +15137,6 @@ part number 2062-2P from STA</description>
 <pinref part="C14" gate="G$1" pin="1"/>
 </segment>
 </net>
-<net name="N$17" class="0">
-<segment>
-<wire x1="76.2" y1="38.1" x2="73.66" y2="38.1" width="0.1524" layer="91"/>
-<pinref part="C16" gate="G$1" pin="-"/>
-<wire x1="73.66" y1="55.88" x2="76.2" y2="55.88" width="0.1524" layer="91"/>
-<wire x1="76.2" y1="55.88" x2="76.2" y2="38.1" width="0.1524" layer="91"/>
-<pinref part="R2" gate="G$1" pin="2"/>
-<junction x="73.66" y="55.88"/>
-<pinref part="C17" gate="G$1" pin="2"/>
-<pinref part="J7" gate="G$1" pin="2"/>
-<junction x="76.2" y="38.1"/>
-</segment>
-</net>
 <net name="N$18" class="0">
 <segment>
 <pinref part="R2" gate="G$1" pin="1"/>
@@ -15178,6 +15158,26 @@ part number 2062-2P from STA</description>
 <wire x1="71.12" y1="63.5" x2="73.66" y2="63.5" width="0.1524" layer="91"/>
 <pinref part="C16" gate="G$1" pin="+"/>
 <junction x="73.66" y="63.5"/>
+</segment>
+</net>
+<net name="N$7" class="0">
+<segment>
+<pinref part="C8" gate="G$1" pin="1"/>
+<pinref part="J4" gate="G$1" pin="1"/>
+<wire x1="35.56" y1="60.96" x2="35.56" y2="38.1" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$19" class="0">
+<segment>
+<pinref part="C16" gate="G$1" pin="-"/>
+<wire x1="73.66" y1="55.88" x2="76.2" y2="55.88" width="0.1524" layer="91"/>
+<pinref part="R2" gate="G$1" pin="2"/>
+<junction x="73.66" y="55.88"/>
+<pinref part="C17" gate="G$1" pin="2"/>
+<pinref part="J7" gate="G$1" pin="1"/>
+<wire x1="76.2" y1="38.1" x2="73.66" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="55.88" x2="76.2" y2="38.1" width="0.1524" layer="91"/>
+<junction x="76.2" y="38.1"/>
 </segment>
 </net>
 </nets>
